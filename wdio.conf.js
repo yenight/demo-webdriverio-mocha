@@ -13,7 +13,7 @@ exports.config = {
             maxInstances: 1,
             browserName: 'chrome',
             'goog:chromeOptions': {
-                args: ['headless', 'disable-gpu', 'window-size=1280,800'],
+                args: ['disable-gpu', 'window-size=1280,800'],
             },
             'zal:recordVideo': true,
             'zal:name': 'Demo Integration Tests',
@@ -22,7 +22,7 @@ exports.config = {
     ],
     logLevel: 'trace',
     bail: 0,
-    baseUrl: 'http://automationpractice.com',
+    baseUrl: 'http://39.98.60.164:80',
     waitforTimeout: 10000,
     connectionRetryTimeout: 90000,
     connectionRetryCount: 3,

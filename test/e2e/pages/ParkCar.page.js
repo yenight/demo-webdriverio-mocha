@@ -1,4 +1,4 @@
-class LoginPage {
+class ParkCar {
     open() {
         browser.url('/');
     }
@@ -16,7 +16,7 @@ class LoginPage {
     }
 
     get userLoggedIn() {
-        return $('body #username');
+        return $('#username');
     }
 
     login(user) {
@@ -27,4 +27,4 @@ class LoginPage {
     }
 }
 
-export const loginPage = new LoginPage();
+export const parkCar = new ParkCar();

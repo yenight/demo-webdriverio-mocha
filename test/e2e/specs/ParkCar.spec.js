@@ -1,18 +1,18 @@
-import { loginPage } from '../pages/Login.page';
-import { loginValidation } from '../validations/Login.validation';
+import { parkCar } from '../pages/ParkCar.page';
 import { context } from '../../data/Context';
+import { parkCarValidation } from '../validations/ParkCar.validation';
 
 describe('Authentication page.', () => {
     before(() => {
-        loginPage.open();
+        parkCar.open();
     });
 
     it('Displays login message successfully.', () => {
-        loginPage.login(context.logins.user);
+        parkCar.login(context.parkCar.user);
         // loginValidation.checkUserLoggedMessage();
     });
 
     it('Displays user name on the page.', () => {
-        loginValidation.checkUserName(context.logins.user.name);
+        parkCarValidation.checkUserName(context.parkCar.user.name);
     });
 });
