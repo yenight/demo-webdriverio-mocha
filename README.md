@@ -27,11 +27,6 @@ Run e2e tests:
 yarn run e2e:tests
 ```
 
-Run visual regression tests:
-```
-yarn run visual:regression:tests
-```
-
 #### Reports
 
 ![alt text](https://github.com/WarleyGabriel/demo-webdriverio-mocha/blob/master/images/allure-report.png)
