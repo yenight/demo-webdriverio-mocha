@@ -12,6 +12,9 @@ exports.config = {
         {
             maxInstances: 1,
             browserName: 'chrome',
+            'goog:chromeOptions': {
+                args: ['headless', 'disable-gpu', 'window-size=1280,800'],
+            },
             'zal:recordVideo': true,
             'zal:name': 'Demo Integration Tests',
             'zal:build': 'WebDriverIO',
@@ -57,9 +60,6 @@ exports.config = {
         ],
         [TimelineService],
         // Uncomment to run tests with Selenium Standalone, if you have JDK installed.
-        // ['selenium-standalone'],
+        ['selenium-standalone'],
     ],
-    before() {
-        browser.setWindowSize(1920, 1080);
-    },
 };

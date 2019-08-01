@@ -15,8 +15,7 @@
     "format": "yarn run lint --fix --quiet && yarn run prettier --write",
     "lint": "eslint .",
     "prettier": "prettier --check \"**/*.js*\"",
-    "report": "allure generate --clean ./test-report/allure-result/ -o ./test-report/allure-report",
-    "visual:regression:tests": "wdio wdio.conf.js --spec test/visualRegression/*.spec.js"
+    "report": "allure generate --clean ./test-report/allure-result/ -o ./test-report/allure-report"
   },
   "dependencies": {
     "@babel/cli": "^7.5.0",
@@ -40,11 +39,13 @@
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-import": "^2.18.0",
     "fibers": "^4.0.1",
-    "husky": "^3.0.1",
     "mocha": "^6.1.4",
     "prettier": "^1.18.2",
     "wdio-image-comparison-service": "^1.2.0",
     "wdio-timeline-reporter": "^5.0.10",
     "webdriverio": "^5.11.0"
+  },
+  "devDependencies": {
+    "wdio-chromedriver-service": "^5.0.2"
   }
 }
